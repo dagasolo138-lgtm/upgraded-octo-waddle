@@ -81,6 +81,10 @@ namespace MiniGameDoctor.Editor
             yield return new TextureImportRule();
             yield return new AudioImportRule();
             yield return new BuildSceneRule();
+            yield return new BuildReportRule();
+            yield return new ShaderVariantRule();
+            yield return new FontAssetRule();
+            yield return new SpriteAtlasRule();
             yield return new WebGlSettingsRule();
             yield return new WeChatPreparationRule();
         }

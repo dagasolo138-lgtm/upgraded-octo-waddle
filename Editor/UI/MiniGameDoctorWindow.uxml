@@ -3,8 +3,11 @@
   <ui:VisualElement name="root" class="doctor-root">
     <ui:VisualElement class="hero-panel">
       <ui:Label text="MiniGame Doctor" class="hero-title" />
-      <ui:Label text="发布前自动检查 Unity 项目的包体、资源、音频、纹理与 WebGL / 微信小游戏风险。" class="hero-subtitle" />
-      <ui:Button name="scanButton" text="开始体检" class="scan-button" />
+      <ui:Label text="发布前自动检查包体、资源、Shader、字体、Sprite Atlas 与 WebGL / 微信小游戏风险。" class="hero-subtitle" />
+      <ui:VisualElement class="hero-actions">
+        <ui:Button name="scanButton" text="开始体检" class="scan-button" />
+        <ui:Button name="fixAllButton" text="修复所有低风险项" class="fix-all-button" />
+      </ui:VisualElement>
     </ui:VisualElement>
 
     <ui:VisualElement class="summary-panel">

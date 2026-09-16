@@ -27,8 +27,14 @@
   margin-bottom: 14px;
 }
 
+.hero-actions {
+  flex-direction: row;
+}
+
 .scan-button {
+  flex-grow: 1;
   height: 34px;
+  margin-right: 8px;
   -unity-font-style: bold;
   background-color: #356ae6;
   color: #ffffff;
@@ -40,6 +46,22 @@
 
 .scan-button:hover {
   background-color: #4277ef;
+}
+
+.fix-all-button {
+  min-width: 160px;
+  height: 34px;
+  -unity-font-style: bold;
+  background-color: #2d6b49;
+  color: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.fix-all-button:hover {
+  background-color: #377c57;
 }
 
 .summary-panel {
@@ -134,15 +156,25 @@
   margin-top: 9px;
 }
 
-.issue-path {
+.issue-path,
+.footer-spacer {
   flex-grow: 1;
+}
+
+.issue-path {
   color: #7f8996;
   white-space: normal;
 }
 
-.locate-button {
+.locate-button,
+.fix-button {
   min-width: 54px;
   margin-left: 8px;
+}
+
+.fix-button {
+  background-color: #2d6b49;
+  color: #ffffff;
 }
 
 .empty-state {

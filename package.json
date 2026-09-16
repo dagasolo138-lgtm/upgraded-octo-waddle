@@ -1,15 +1,17 @@
 {
   "name": "com.ash.minigame-doctor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "MiniGame Doctor",
-  "description": "Unity editor diagnostics for WebGL and mini-game release readiness.",
+  "description": "Unity editor diagnostics for WebGL and mini-game release readiness, including build size, shaders, fonts and sprite atlases.",
   "unity": "2022.3",
   "keywords": [
     "webgl",
     "minigame",
     "optimization",
     "diagnostics",
-    "wechat"
+    "wechat",
+    "build-report",
+    "shader"
   ],
   "author": {
     "name": "Ash"

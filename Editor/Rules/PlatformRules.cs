@@ -106,6 +106,17 @@ namespace MiniGameDoctor.Editor
                     DiagnosticSeverity.Info);
             }
 
+            if (PlayerSettings.WebGL.debugSymbolMode != WebGLDebugSymbolMode.Off)
+            {
+                yield return new DiagnosticIssue(
+                    Id,
+                    "WebGL 构建仍生成 Debug Symbols",
+                    $"当前 Debug Symbols：{PlayerSettings.WebGL.debugSymbolMode}。发布包如果不需要线上符号文件，可以关闭以减少构建输出。",
+                    "正式发布前可设为 Off；若你依赖线上堆栈符号化，可继续保留 External。",
+                    DiagnosticSeverity.Info,
+                    safeFixId: SafeFixRegistry.DisableWebGlDebugSymbols);
+            }
+
 #if UNITY_6000_0_OR_NEWER
             if (!PlayerSettings.WebGL.wasm2023)
             {

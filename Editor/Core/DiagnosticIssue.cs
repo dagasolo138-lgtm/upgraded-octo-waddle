@@ -17,6 +17,7 @@ namespace MiniGameDoctor.Editor
         public string Message;
         public string Recommendation;
         public string AssetPath;
+        public string SafeFixId;
         public DiagnosticSeverity Severity;
 
         public DiagnosticIssue(
@@ -25,7 +26,8 @@ namespace MiniGameDoctor.Editor
             string message,
             string recommendation,
             DiagnosticSeverity severity,
-            string assetPath = null)
+            string assetPath = null,
+            string safeFixId = null)
         {
             RuleId = ruleId;
             Title = title;
@@ -33,6 +35,7 @@ namespace MiniGameDoctor.Editor
             Recommendation = recommendation;
             Severity = severity;
             AssetPath = assetPath;
+            SafeFixId = safeFixId;
         }
     }
 }
