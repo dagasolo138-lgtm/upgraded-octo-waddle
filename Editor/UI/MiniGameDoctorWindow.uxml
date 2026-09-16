@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:Style src="MiniGameDoctorWindow.uss" />
+  <ui:VisualElement name="root" class="doctor-root">
+    <ui:VisualElement class="hero-panel">
+      <ui:Label text="MiniGame Doctor" class="hero-title" />
+      <ui:Label text="发布前自动检查 Unity 项目的包体、资源、音频、纹理与 WebGL / 微信小游戏风险。" class="hero-subtitle" />
+      <ui:Button name="scanButton" text="开始体检" class="scan-button" />
+    </ui:VisualElement>
+
+    <ui:VisualElement class="summary-panel">
+      <ui:Label name="summaryLabel" text="尚未扫描" class="summary-text" />
+      <ui:Label name="statusLabel" text="点击“开始体检”扫描当前项目。" class="status-text" />
+    </ui:VisualElement>
+
+    <ui:ScrollView name="resultsScroll" class="results-scroll">
+      <ui:VisualElement name="resultsContainer" class="results-container" />
+    </ui:ScrollView>
+  </ui:VisualElement>
+</ui:UXML>
