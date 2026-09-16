@@ -1,0 +1,9 @@
+{
+  "name": "MiniGameDoctor.Editor",
+  "rootNamespace": "MiniGameDoctor.Editor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true,
+  "allowUnsafeCode": false
+}
